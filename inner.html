@@ -24,7 +24,7 @@
         <h1 class="visually-hidden">Подберите себе лучший отдых!</h1>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <legend>Инфраструктура:</legend>
+            <legend class="filter-caption">Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
@@ -41,7 +41,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Тип жилья:</legend>
+            <legend class="filter-caption">Тип жилья:</legend>
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hostel" id="filter-hostel" checked>
@@ -58,7 +58,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Стоимость в сутки (Р):</legend>
+            <legend class="filter-caption">Стоимость в сутки (Р):</legend>
             <input class="filter-input filter-input-cost" type="text" name="cost-of" placeholder="От 0">
             <input class="filter-input filter-input-cost" type="text" name="cost-to" placeholder="До 3000">
           </fieldset>
@@ -66,8 +66,8 @@
         </form>
       </section>
       <section class="sort">
-        <span class="text">Найдено:3</span>
-        <span class="text-very-small">Сортировка:</span>
+        <span class="hashtag">Найдено:3</span>
+        <span class="text-sort">Сортировка:</span>
         <a class="button button-sort" href="#">по цене</a>
         <a class="button button-sort" href="#">по типу</a>
         <a class="button button-sort" href="#">по рейтингу</a>
@@ -75,7 +75,7 @@
       <section class="hotels">
         <ul class="hotels-list">
           <li class="hotels-item">
-            <img src="img/amara resort.jpg" alt="Гостиница Amara Resort & Spa">
+            <img src="img/AmaraResort.jpg" alt="Гостиница Amara Resort & Spa">
             <div class="hotel-list-info">
               <h2><a href="#" class="button button-hotel-list">Amara Resort & Spa</a></h2>
               <span class="text-small">Гостиница</span>
@@ -85,10 +85,10 @@
                 <a class="button button-occupy" href="#">Забронировать</a>
               </p>
             </div>
-            <span>Рейтинг: 8,5</span>
+            <span class="rank">Рейтинг: 8,5</span>
           </li>
           <li class="hotels-item">
-            <img src="img/villas at poco diablo.jpg" alt="Мотель Desert Quail Inn">
+            <img src="img/VillasAtPocoDiablo.jpg" alt="Мотель Desert Quail Inn">
             <div class="hotel-list-info">
               <h2><a href="#" class="button button-hotel-list">Desert Quail Inn</a></h2>
               <span class="text-small">Мотель</span>
@@ -98,10 +98,10 @@
                 <a class="button button-occupy" href="#">Забронировать</a>
               </p>
             </div>
-            <span>Рейтинг: 8,9</span>
+            <span class="rank">Рейтинг: 8,9</span>
           </li>
           <li class="hotels-item">
-            <img src="img/desert quail.jpg" alt="Апартаменты Villas at Poco Diablo">
+            <img src="img/DesertQuail.jpg" alt="Апартаменты Villas at Poco Diablo">
             <div class="hotel-list-info">
               <h2><a href="#" class="button button-hotel-list">Villas at Poco Diablo</a></h2>
               <span class="text-small">Апартаменты</span>
@@ -111,20 +111,20 @@
                 <a class="button button-occupy" href="#">Забронировать</a>
               </p>
             </div>
-            <span>Рейтинг: 9,2</span>
+            <span class="rank">Рейтинг: 9,2</span>
           </li>
         </ul>
       </section>
     </main>
     <footer class="main-footer">
-      <p>#VISITSEDONA</p>
+      <p class="hashtag">#VISITSEDONA</p>
       <ul>
-        <li><a href="#">Твиттер</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Ютуб</a></li>
+        <li class="main-footer-item"><a class="button button-main-footer"  href="#">Твиттер</a></li>
+        <li class="main-footer-item"><a class="button button-main-footer"  href="#">Фейсбук</a></li>
+        <li class="main-footer-item"><a class="button button-main-footer"  href="#">Ютуб</a></li>
       </ul>  
       <p class="footer-copyright">
-        <span>Website by</span> 
+        <span class="website">Website by</span> 
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/index-copyright.svg" width="100" height="100" alt="Html Academy">
         </a>

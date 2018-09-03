@@ -29,12 +29,15 @@ a {
 }
 
 .site-navigation a:active {
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0,0,0,0.3);
 }
 
 .background-reasons {
   background-color: #81b3d2;
+}
+
+.reasons {
+  line-height: 21px;
 }
 
 .reasons .caption {
@@ -61,6 +64,10 @@ a {
   color: #333333;
 }
 
+.feature {
+  line-height: 21px;
+}
+
 .feature-list {
   list-style: none;
 }
@@ -78,6 +85,10 @@ a {
 .hashtag {
   font-size: 21px;
   color: #000000;
+}
+.hashtag-small {
+  font-weight: 400;
+  color: #333333;
 }
 
 .question {
@@ -152,6 +163,7 @@ a {
   opacity: 0.3;
   border-bottom: 1px dashed #81b3d2;
   font-weight: 400;
+  line-height: 18px;
 }
 
 .button-sort:hover {
@@ -203,6 +215,7 @@ a {
 
 .button-detail:focus {
   background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-occupy {
@@ -217,6 +230,7 @@ a {
 
 .button-occupy:focus {
   background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .main-footer-item {
@@ -276,6 +290,7 @@ a {
 
 .filter-caption {
   font-size: 16px;
+  line-height: 21px;
 }
 
 .filter-option {
@@ -283,12 +298,22 @@ a {
   list-style: none;
 }
 
+.filter-label {
+  line-height: 21px;
+}
+
 .text-sort {
   font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 .hotels-item {
   list-style: none;
+}
+
+.hotels-item-text {
+  font-weight: 400;
 }
 
 .hotel-list-info {
@@ -297,4 +322,15 @@ a {
 
 .rank {
   color: #666666;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/*Смог справиться с поведением ссылок при нахождении на активной странице только таким образом. Без hover и т.д. так и не получилось*/
+
+.site-navigation .active-page, 
+.site-navigation .active-page:hover,
+.site-navigation .active-page:active, 
+.site-navigation .active-page:focus {
+  color: rgba(118,99,87,1); 
 }

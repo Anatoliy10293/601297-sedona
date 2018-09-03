@@ -15,7 +15,7 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="foto-video.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li><a class="active-page">Гостиницы</a></li>
         </ul>  
       </nav>
     </header>
@@ -28,15 +28,15 @@
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
-                <label for="filter-pool">Бассейн</label>
+                <label for="filter-pool" class="filter-label">Бассейн</label>
               </li>  
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
-                <label for="filter-parking">Парковка</label>
+                <label for="filter-parking" class="filter-label">Парковка</label>
               </li> 
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
-                <label for="filter-wi-fi">Wi-Fi</label>
+                <label for="filter-wi-fi" class="filter-label">Wi-Fi</label>
               </li> 
             </ul>
           </fieldset>
@@ -45,15 +45,15 @@
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hostel" id="filter-hostel" checked>
-                <label for="filter-hostel">Гостиница</label>
+                <label for="filter-hostel" class="filter-label">Гостиница</label>
               </li>  
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
-                <label for="filter-hotel">Мотель</label>
+                <label for="filter-hotel" class="filter-label">Мотель</label>
               </li> 
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" id="filter-apartment" checked>
-                <label for="filter-apartment">Апартаменты</label>
+                <label for="filter-apartment" class="filter-label">Апартаменты</label>
               </li> 
             </ul>
           </fieldset>
@@ -68,7 +68,7 @@
       <section class="sort">
         <span class="hashtag">Найдено:3</span>
         <span class="text-sort">Сортировка:</span>
-        <a class="button button-sort" href="#">по цене</a>
+        <a class="button button-sort button-sort-active" href="#">по цене</a>
         <a class="button button-sort" href="#">по типу</a>
         <a class="button button-sort" href="#">по рейтингу</a>
       </section>
@@ -78,8 +78,8 @@
             <img src="img/AmaraResort.jpg" alt="Гостиница Amara Resort & Spa">
             <div class="hotel-list-info">
               <h2><a href="#" class="button button-hotel-list">Amara Resort & Spa</a></h2>
-              <span class="text-small">Гостиница</span>
-              <span class="text-small">От 4000 р.</span>
+              <span class="hotels-item-text">Гостиница</span>
+              <span class="hotels-item-text">От 4000 р.</span>
               <p>
                 <a class="button button-detail" href="#">Подробнее</a>
                 <a class="button button-occupy" href="#">Забронировать</a>
@@ -91,8 +91,8 @@
             <img src="img/VillasAtPocoDiablo.jpg" alt="Мотель Desert Quail Inn">
             <div class="hotel-list-info">
               <h2><a href="#" class="button button-hotel-list">Desert Quail Inn</a></h2>
-              <span class="text-small">Мотель</span>
-              <span class="text-small">От 3000 р.</span>
+              <span class="hotels-item-text">Мотель</span>
+              <span class="hotels-item-text">От 3000 р.</span>
               <p>
                 <a class="button button-detail" href="#">Подробнее</a>
                 <a class="button button-occupy" href="#">Забронировать</a>
@@ -104,8 +104,8 @@
             <img src="img/DesertQuail.jpg" alt="Апартаменты Villas at Poco Diablo">
             <div class="hotel-list-info">
               <h2><a href="#" class="button button-hotel-list">Villas at Poco Diablo</a></h2>
-              <span class="text-small">Апартаменты</span>
-              <span class="text-small">От 2000 р.</span>
+              <span class="hotels-item-text">Апартаменты</span>
+              <span class="hotels-item-text">От 2000 р.</span>
               <p>
                 <a class="button button-detail" href="#">Подробнее</a>
                 <a class="button button-occupy" href="#">Забронировать</a>

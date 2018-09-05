@@ -8,54 +8,71 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-      <div class="container2">
+      <div class="big-container">
         <header class="main-header">
           <nav class="main-navigation">
-            <a><img src="img/index-logo.svg" width="100" height="100" alt="Логотип сайта Седона"></a>
+            <a><img src="img/logo-sedona.svg" width="100" height="100" alt="Логотип сайта Седона"></a>
             <ul class="site-navigation">
-              <li><a href="info.html">Информация</a></li>
-              <li><a href="foto-video.html">Фото и видео</a></li>
-              <li><a href="map.html">Карта штата</a></li>
-              <li><a href="inner.html">Гостиницы</a></li>
+              <div class="site-navigation-container">
+                <li class="site-navigation-info"><a href="info.html">Информация</a></li>
+                <li class="site-navigation-foto"><a href="foto-video.html">Фото и видео</a></li>
+                <li class="site-navigation-map"><a href="map.html">Карта штата</a></li>
+                <li class="site-navigation-hotels"><a href="inner.html">Гостиницы</a></li>
+              </div>
             </ul>  
           </nav>
         </header>
         <main class="container">
           <!--Место под фон с горами-->
-          <h1 class="visually-hidden">
-             Sedona
-          </h1>
-          <p class="hashtag">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="hashtag-small">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <div class="container-hashtag">
+            <h1 class="visually-hidden">
+              Sedona
+            </h1>
+            <p class="hashtag hashtag1">Седона — небольшой городок в Аризоне,</p>
+            <p class="hashtag hashtag2">заслуживающий большего!</p>
+            <p class="hashtag-small">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          </div>
           <section class="reasons">
             <h2 class="visually-hidden">Зачем ехать в Седону?</h2>
             <div class="background-reasons">
-              <h3 class="caption">Настоящий городок</h3>
-              <p class="description">— №1 —</p>
-              <p class="description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              <img src="img/sedona-city.jpg" alt="Умиротворяющий вид на тихий городок Седона">
+              <div class="background-reasons-text">
+                <h3 class="caption">Настоящий городок</h3>
+                <p class="description">— №1 —</p>
+                <p class="description description3">Седона — не аттракцион для туристов,</p>
+                <p class="description description4">там течёт своя жизнь</p>
+              </div>
+              <img src="img/sedona-city.jpg" width="800" height="256" alt="Умиротворяющий вид на тихий городок Седона">
             </div>
             <div class="feature">
               <ul class="feature-list">
                 <li class="feature-item">
+                  <img src="img/icon-1.svg">
                   <h3 class="future-caption">Жильё</h3>
-                  <p class="future-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  <p class="future-description description1">Рекомендуем пожить в настоящем</p>
+                  <p class="future-description description2">мотеле, всё как в кино!</p>
                 </li>
                 <li class="feature-item">
+                  <img src="img/icon-2.svg">
                   <h3 class="future-caption">Еда</h3>
-                  <p class="future-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <p class="future-description description1">Всегда заказывайте фирменный бургер,</p>
+                  <p class="future-description description2">вы не разочаруетесь!</p>
                 </li>
                 <li class="feature-item">
+                  <img src="img/icon-3.svg">
                   <h3 class="future-caption">Сувениры</h3>
-                  <p class="future-description">Не только китайского, но и местного производства!</p>
+                  <p class="future-description description1">Не только китайского, но и местного</p>
+                  <p class="future-description description2">производства!</p>
                 </li>
               </ul>
             </div>
             <div class="background-reasons">
               <img src="img/mountane-bridge.jpg" alt="Очень красивый вид на горный мост">
-              <h3 class="caption">Там есть Мост дьявола</h3>
-              <p class="description">— №2 —</p>
-              <p class="description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <div class="background-reasons-text">
+                <h3 class="caption">Там есть Мост дьявола</h3>
+                <p class="description">— №2 —</p>
+                <p class="description description3">Да, по нему можно пройти! Если конечно</p>
+                <p class="description description4">вы осмелитесь</p>
+              </div>
             </div>
             <div class="reasons-other">
               <ul class="reasons-other-list">

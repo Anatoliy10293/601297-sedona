@@ -15,6 +15,12 @@ a {
   text-decoration: none;
 }
 
+.big-container {
+  width: 1200px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
 .site-navigation {
   list-style: none;
 }
@@ -52,6 +58,7 @@ a {
 
 .reasons-other-item {
   list-style: none;
+  background-color: #eeeeee;
 }
 
 .reasons .caption2 {
@@ -66,6 +73,7 @@ a {
 
 .feature {
   line-height: 21px;
+  margin-bottom: 85px;
 }
 
 .feature-list {
@@ -80,45 +88,32 @@ a {
 .future-description {
   font-weight: 400;
   color: #333333;
+  margin-bottom: 0px;
 }
 
 .hashtag {
   font-size: 21px;
   color: #000000;
 }
+
+.hashtag1 {
+  margin-bottom: 0px;
+}
+
+.hashtag2 {
+  margin-top: 0px;
+}
+
 .hashtag-small {
   font-weight: 400;
   color: #333333;
+  margin-bottom: 53px;
 }
 
 .question {
   font-size: 30px;
   color: #000000;
 }
-
-/*.text {
-  font-size: 26px;
-}*/
-
-.container {
-  text-align: center;
-  /*background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% auto;*/
-}
-
-/*.container .text {
-  font-size: 20px;
-}
-
-.text-small {
-  font-weight: 400;
-}
-
-.text-very-small {
-  font-size: 12px;
-  font-weight: 400;
-}*/
 
 .button {
   font-weight: bold;
@@ -159,22 +154,29 @@ a {
 
 .button-sort {
   font-size: 12px;
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0,0,0,0.3);
   border-bottom: 1px dashed #81b3d2;
   font-weight: 400;
   line-height: 18px;
 }
 
 .button-sort:hover {
-  color: #81b3d2;
+  color: rgba(129,179,210,1);
 }
 
 .button-sort:focus {
-  color: #000000;
-  opacity: 1;
+  color: rgba(0,0,0,1);
   border-bottom: none;
 }
+
+.button-sort-active, 
+.button-sort-active:hover,
+.button-sort-active:active, 
+.button-sort-active:focus {
+  color: rgba(129,179,210,1);
+  border: none;
+}
+
 
 .button-hotel-list {
   color: #000000;
@@ -326,11 +328,134 @@ a {
   line-height: 21px;
 }
 
-/*Смог справиться с поведением ссылок при нахождении на активной странице только таким образом. Без hover и т.д. так и не получилось*/
-
 .site-navigation .active-page, 
 .site-navigation .active-page:hover,
 .site-navigation .active-page:active, 
 .site-navigation .active-page:focus {
   color: rgba(118,99,87,1); 
 }
+
+.visually-hidden {
+  display: none;
+}
+
+
+
+
+
+/*Стили для сеток*/
+
+
+
+
+.site-navigation-info {
+  width: 92px;
+  margin-right: 148px;
+}
+
+.site-navigation-foto {
+  width: 100px;
+  margin-right: 390px;
+}
+
+.site-navigation-map {
+  width: 90px;
+}
+
+.site-navigation-hotels {
+  width: 80px;
+  margin-left: 162px;
+}
+
+.site-navigation-container {
+  display:flex;
+}
+
+.main-navigation {
+  padding: 18px 80px;
+}
+
+.main-navigation .site-navigation {
+  padding: 0;
+  margin: 0;
+}
+
+.container-hashtag {
+  text-align: center;
+}
+
+.background-reasons {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.background-reasons-text {
+  width: 400px;
+  text-align: center;
+}
+
+.background-reasons-text .caption {
+  padding-top: 45px;
+  margin-top: 0px;
+}
+
+.background-reasons-text .description3 {
+  margin: 0px;
+}
+
+.background-reasons-text .description4 {
+  margin: 0px;
+}
+
+.feature-list {
+  display: flex;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.feature-list .feature-item {
+  width: 33.3%;
+  text-align: center;
+}
+
+.feature-item .description2 {
+  margin-top: 0px;
+}
+
+
+/*Обводки для сеток*/
+
+.site-navigation li {
+  border: 1px solid red;
+}
+
+.main-navigation {
+  border: 1px solid green;
+}
+
+.hashtag {
+  border: 1px solid red;
+}
+
+.hashtag-small {
+  border: 1px solid green;
+}
+
+.background-reasons {
+  border: 1px solid red;
+}
+
+.feature-list li {
+  border: 1px solid yellow;
+}
+
+
+
+
+
+
+
+
+
+
+

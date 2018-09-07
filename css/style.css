@@ -43,6 +43,10 @@ a {
   color: rgba(0,0,0,0.3);
 }
 
+.site-navigation-all {
+  width: 20%;
+}
+
 .background-reasons {
   background-color: #81b3d2;
   display: flex;
@@ -76,11 +80,6 @@ a {
   color: #000000;
 }
 
-.reasons .description2 {
-  font-weight: 400;
-  color: #333333;
-}
-
 .feature {
   line-height: 21px;
   margin-bottom: 85px;
@@ -107,11 +106,7 @@ a {
 }
 
 .hashtag1 {
-  margin-bottom: 0px;
-}
-
-.hashtag2 {
-  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .hashtag-small {
@@ -120,8 +115,11 @@ a {
   margin: 0px;
 }
 
-.hashtag-small-margin{
-  margin-bottom: 50px;
+.hashtag-small-center {
+  padding-left: 382px;
+  padding-right: 382px;
+  text-align: center;
+  margin-bottom: 48px;
 }
 
 .question {
@@ -129,6 +127,11 @@ a {
   color: #000000;
   margin-top: 0px;
   margin-bottom: 26px;
+}
+
+.sort-result {
+  font-size: 21px;
+  color: #000000;
 }
 
 .button {
@@ -397,27 +400,9 @@ a {
 
 
 
-.site-navigation-info {
-  width: 92px;
-  margin-right: 148px;
-}
-
-.site-navigation-foto {
-  width: 100px;
-  margin-right: 390px;
-}
-
-.site-navigation-map {
-  width: 90px;
-}
-
-.site-navigation-hotels {
-  width: 80px;
-  margin-left: 162px;
-}
-
 .main-navigation {
-  padding: 18px 80px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .main-navigation .site-navigation {
@@ -425,11 +410,32 @@ a {
   margin: 0;
 }
 
+.site-navigation-info {
+  margin-left: 73px;
+}
+
+.site-navigation-foto {
+  margin-right: auto;
+}
+
+.site-navigation-map {
+  margin-left: auto;
+  text-align: right;
+}
+
+.site-navigation-hotels {
+  text-align: right;
+  margin-right: 73px;
+}
+
 .container-hashtag {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 53px;
+  margin-left: 29.5%;
+  margin-right: 29.5%;
+  text-align: center;
 }
 
 .background-reasons-text {
@@ -446,10 +452,6 @@ a {
   margin: 0px;
 }
 
-.background-reasons-text .description4 {
-  margin: 0px;
-}
-
 .feature-list {
   display: flex;
   padding-left: 0px;
@@ -459,6 +461,21 @@ a {
 .feature-list .feature-item {
   width: 33.3%;
   text-align: center;
+}
+
+.feature-item-house {
+  padding-left: 73px;
+  padding-right: 73px;
+}
+
+.feature-item-food {
+  padding-left: 58px;
+  padding-right: 58px;
+}
+
+.feature-item-gift {
+  padding-left: 64px;
+  padding-right: 64px;
 }
 
 .feature-item .description2 {
@@ -474,7 +491,8 @@ a {
 .reasons-other-list {
   display: flex;
   padding-left: 0px;
-  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .reasons-other-description {
@@ -487,28 +505,26 @@ a {
   padding: 0px;
 }
 
-.reasons-other-item .description6 {
-  margin: 0px;
-  padding: 0px;
-}
-
 .reasons-other-list .reasons-other-item {
   text-align: center;
+  width: 33.3%;
 }
 
+/* Отступы вроде один в один, как на макете, а переносы строк все равно получаются другими */
+
 .reasons-other-item-correction1 {
-  margin-left: 95px;
-  width: 210px;
+  padding-left: 95px;
+  padding-right: 95px;
 }
 
 .reasons-other-item-correction2 {
-  margin-left: 165px;
-  width: 265px;
+  padding-left: 68px;
+  padding-right: 68px;
 }
 
 .reasons-other-item-correction3 {
-  margin-left: 145px;
-  width: 250px;
+  padding-left: 76px;
+  padding-right: 76px;
 }
 
 .hotel-search {

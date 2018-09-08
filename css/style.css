@@ -21,10 +21,6 @@ a {
   margin: 0 auto;
 }
 
-.container2 {
-  padding: 0 73px;
-}
-
 .site-navigation {
   list-style: none;
   display: flex;
@@ -309,6 +305,8 @@ a {
   line-height: 31px;
   display: flex;
   margin-bottom: 30px;
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
 .filter-caption {
@@ -336,6 +334,8 @@ a {
 .hotels-item {
   list-style: none;
   display: flex;
+  margin-left: 73px;
+  margin-right: 73px;
 }
 
 .hotels-item-text {
@@ -350,6 +350,10 @@ a {
 .hotels-list-comment {
   display: flex;
   margin-left: auto;
+}
+
+.hotels-list {
+  padding-left: 0px;
 }
 
 .hotel-list-info-caption {
@@ -394,11 +398,157 @@ a {
   padding: 65px 58px 56px 58px;
 }
 
+.structure-list {
+  padding-left: 0px;
+}
+
+.cost-input {
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 72px;
+}
+
+.icon-house {
+  background-image: url(../img/icon-1.svg);
+}
+
+.icon-food {
+  background-image: url(../img/icon-2.svg);
+}
+
+.icon-gift {
+  background-image: url(../img/icon-3.svg);
+}
+
+/*Свойства для формы сортировки стоимости*/
+
+
+/* Не получается filter-range спозиционировать вправо с помощью margin-left: auto;, хотя filter-form это flex, не могу понять почему так */
+.filter-range {
+  width: 330px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-left: auto;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
 
 /*Стили для сеток*/
-
-
-
 
 .main-navigation {
   padding-top: 18px;
@@ -441,6 +591,13 @@ a {
 .background-reasons-text {
   width: 400px;
   text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.reasons-text-padding {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .background-reasons-text .caption {
@@ -448,14 +605,9 @@ a {
   margin-top: 0px;
 }
 
-.background-reasons-text .description3 {
-  margin: 0px;
-}
-
 .feature-list {
   display: flex;
   padding-left: 0px;
-  margin: 0px;
 }
 
 .feature-list .feature-item {
@@ -498,11 +650,6 @@ a {
 .reasons-other-description {
   font-weight: 400;
   color: #333333;
-}
-
-.reasons-other-item .description5 {
-  margin: 0px;
-  padding: 0px;
 }
 
 .reasons-other-list .reasons-other-item {
@@ -555,34 +702,23 @@ a {
   align-items: center;
 }
 
-.structure {
-  width: 142px;
-  padding: 30px 0px;
-  margin: 0px;
-  border: none;
-}
-
-.house {
-  width: 142px;
-  padding: 30px 0px;
-  margin: 0px 0px 0px 112px;
-  border: none;
-}
-
-.cost {
-  width: 320px;
-  padding: 30px 0px;
-  margin: 0px 0px 0px 345px;
-  border: none;
-}
-
 .filter-form {
   display: flex;
+}
+
+.filter-form-box {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border: none;
 }
 
 .sort {
   display: flex;
   align-items: baseline;
+  margin-left: 73px;
+  margin-right: 73px;
 }
 
 .container-flex {
@@ -666,7 +802,7 @@ a {
   border: 1px solid yellow;
 }
 
-.cost {
+.filter-range {
   border: 1px solid yellow;
 }
 

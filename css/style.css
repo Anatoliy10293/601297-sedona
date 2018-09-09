@@ -251,10 +251,6 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.main-footer-item {
-  list-style: none;
-}
-
 .button-main-footer {
   color: #ffffff;
   background-color: #81b3d2;
@@ -279,7 +275,7 @@ a {
 .website {
   color: #000000;
   font-weight: 400;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 ::-webkit-input-placeholder {
@@ -379,16 +375,39 @@ a {
   display: none;
 }
 
-.button-change1 {
-  padding: 10px 14px;
+.social-icon {
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 46px;
+  height: 48px;
 }
 
-.button-change2 {
-  padding: 12px 17px 8px 17px;
+.social-icon:hover {
+  background-color: #669ec0;
+  cursor: pointer;
 }
 
-.button-change3 {
-  padding: 10px 13px 10px 13px;
+.social-icon:focus {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.social-icon:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.social-twitter {
+  background-image: url(../img/twitter.svg);
+}
+
+.social-fb {
+  background-image: url(../img/fb-icon.svg);
+}
+
+.social-youtube {
+  background-image: url(../img/youtube.svg);
 }
 
 .modal-travel {
@@ -465,12 +484,10 @@ a {
   width: 330px;
   color: #ffffff;
   text-transform: uppercase;
-  margin-left: auto;
 }
 
 .filter-range-title {
   margin-bottom: 9px;
-
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -713,6 +730,35 @@ a {
 
 .main-footer {
   display: flex;
+  justify-content: space-between;
+}
+
+.main-footer-item {
+  list-style: none;
+}
+
+.main-footer-container {
+  padding-left: 0px;
+}
+
+.main-footer-box {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-footer-item {
+  padding-right: 6px;
+}
+
+
+.footer-copyright {
+  align-items: center;
+}
+
+/*
+.main-footer {
+  display: flex;
   align-items: center;
   padding: 0px 73px;
 }
@@ -733,8 +779,21 @@ a {
   align-items: center;
 }
 
+.main-footer-item {
+  list-style: none;
+}
+*/
 .filter-form {
   display: flex;
+  width: 100%;
+}
+
+.filter-form .filter-range {
+  margin-left: auto;
+}
+
+.filter-form .house {
+  margin-left: 112px;
 }
 
 .filter-form-box {
@@ -766,89 +825,3 @@ a {
 
 
 
-
-
-
-.site-navigation li {
-  border: 1px solid red;
-}
-
-.main-navigation {
-  border: 1px solid green;
-}
-
-.hashtag {
-  border: 1px solid red;
-}
-
-.hashtag-small {
-  border: 1px solid green;
-}
-
-.background-reasons {
-  border: 1px solid red;
-}
-
-.feature-list li {
-  border: 1px solid yellow;
-}
-
-.reasons-other-list {
-  border: 1px solid blue;
-}
-
-.question {
-  border: 1px solid yellow;
-}
-
-.hotel-search form {
-  border: 1px solid blue;
-}
-
-.button-main-footer {
-  border: 1px solid red;
-}
-
-.big-container {
-  border: 1px solid grey;
-}
-
-.main-footer {
-  border: 1px solid green;
-}
-
-.modal-travel{
-  border: 1px solid blue;
-}
-
-.filter {
-  border: 1px solid red;
-}
-
-.structure {
-  border: 1px solid yellow;
-}
-
-.house {
-  border: 1px solid yellow;
-}
-
-.filter-range {
-  border: 1px solid yellow;
-}
-
-.hotels-item {
-  border: 1px solid red;
-}
-
-.background-mountain {
-  border: 1px solid red;
-}
-
-.background-welcome {
-  border: 1px solid yellow;
-}
-
-.background-white {
-  border: 1px solid blue;
-}

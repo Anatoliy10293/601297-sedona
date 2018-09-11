@@ -65,6 +65,7 @@ a {
 .reasons .description {
   color: #ffffff;
   font-weight: 400;
+  margin-bottom: 22px;
 }
 
 .reasons-other-item {
@@ -74,26 +75,28 @@ a {
 .reasons .caption2 {
   font-size: 21px;
   color: #000000;
+  padding-left: 61px;
+  padding-right: 61px;
+  margin-bottom: 24px;
 }
 
 .feature {
   line-height: 21px;
-  margin-bottom: 85px;
-}
-
-.feature-list {
-  list-style: none;
+  margin-bottom: 81px;
 }
 
 .future-caption {
   font-size: 21px;
   color: #000000;
+  margin-top: 29px;
+  margin-bottom: 24px;
 }
 
 .future-description {
   font-weight: 400;
   color: #333333;
   margin-bottom: 0px;
+  padding: 0px 15px;
 }
 
 .hashtag {
@@ -102,20 +105,21 @@ a {
 }
 
 .hashtag1 {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .hashtag-small {
   font-weight: 400;
   color: #333333;
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: -2px;
 }
 
 .hashtag-small-center {
   padding-left: 382px;
   padding-right: 382px;
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 46px;
 }
 
 .question {
@@ -140,7 +144,7 @@ a {
 
 .button-hotel-search {
   background-color: #766357;
-  padding: 34px 140px;
+  padding: 31px 164px;
 }
 
 .button-hotel-search:hover {
@@ -152,9 +156,15 @@ a {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
 }
+
 .button-travel-form {
   background-color: #81b3d2;
-  padding: 20px 196px;
+  padding: 0px;
+  width: 458px;
+  height: 58px;
+  margin-top: auto;
+  position: absolute;
+  top: 282px;
 }
 
 .button-travel-form:hover {
@@ -272,10 +282,17 @@ a {
   color: #000000;
 }
 
+.date-box {
+  display: inline-block;
+  width: 100px;
+  margin-right: 18px;
+  margin-top: -1px;
+}
+
 .website {
   color: #000000;
   font-weight: 400;
-  margin-right: 10px;
+  margin-right: -3px;
 }
 
 ::-webkit-input-placeholder {
@@ -296,13 +313,22 @@ a {
 }
 
 .filter {
-  background-color: #86a5c4;
   color: #ffffff;
   line-height: 31px;
   display: flex;
   margin-bottom: 30px;
   padding-left: 73px;
   padding-right: 73px;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 100%;
+  
+  /*Пытаюсь задать размытие фона, размывается все, включая текст, как сделать так, чтобы размывался только фон?
+    
+    
+  filter: blur(10px);
+  */
 }
 
 .filter-caption {
@@ -313,6 +339,8 @@ a {
 .filter-option {
   font-weight: 400;
   list-style: none;
+ /* background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;*/
 }
 
 .filter-label {
@@ -364,10 +392,12 @@ a {
   padding: 5px 14px 5px 17px;
 }
 
-.site-navigation .active-page, 
-.site-navigation .active-page:hover,
-.site-navigation .active-page:active, 
-.site-navigationr .active-page:focus {
+/*Не понимаю почему не переопределяется на active-page, раньше все нормально работало (применялись стили для ссылки на активной странице)*/
+
+.active-page, 
+.active-page:hover,
+.active-page:active, 
+.active-page:focus {
   color: rgba(118,99,87,1); 
 }
 
@@ -379,6 +409,7 @@ a {
   background-color: #81b3d2;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  color: rgba(255, 255, 255, 1);
   width: 46px;
   height: 48px;
 }
@@ -411,10 +442,11 @@ a {
 }
 
 .modal-travel {
-  width: 456px;
+  width: 458px;
   height: 276px;
   margin: 0 auto;
-  padding: 65px 58px 56px 58px;
+  padding: 47px 55px 56px 55px;
+  position: relative;
 }
 
 .structure-list {
@@ -439,24 +471,25 @@ a {
 }
 
 .icon-food {
-  background-image: url(../img/icon-2.svg);
+  background-image: url(../img/icon-3.svg);
 }
 
 .icon-gift {
-  background-image: url(../img/icon-3.svg);
+  background-image: url(../img/icon-2.svg);
 }
 
 .background-mountain {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 20%;
+  background-position: 50% 21%;
   height: 510px;
+  margin-bottom: 37px;
 }
 
 .background-welcome {
   background-image: url(../img/intro-welcome.svg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 49%;
   background-size: 458px 352px;
   height: 510px;
 }
@@ -476,10 +509,63 @@ a {
   height: 17px;
 }
 
+.travel-item .travel-item-input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.minus {
+  background-image: url(../img/minus.svg);
+  width: 12px;
+  height: 3px;
+  background-color: red;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.plus {
+  background-image: url(../img/plus.svg);
+  width: 11px;
+  height: 11px;
+  background-color: red;
+  background-repeat: no-repeat;
+  background-position: 50% 50%:
+}
+
+.travel-form-flex {
+  display: flex;
+  margin-top: -7px;
+}
+
+.travel-item-children {
+  margin-left: auto;
+}
+
+.travel-label-box {
+  display: inline-block;
+  width: 100px;
+}
+
+.modal-calendar {
+  background-image: url(../img/calendar.svg);
+  width: 21px;
+  height: 22px;
+  color: #a9a9a9;
+  margin-left: auto;
+  margin-right: 11px;
+}
+
+.modal-date {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+}
+
+
+
 /*Свойства для формы сортировки стоимости*/
 
-
-/* Не получается filter-range спозиционировать вправо с помощью margin-left: auto;, хотя filter-form это flex, не могу понять почему так */
 .filter-range {
   width: 330px;
   color: #ffffff;
@@ -648,13 +734,15 @@ a {
 }
 
 .background-reasons-text .caption {
-  padding-top: 45px;
+  padding-top: 47px;
   margin-top: 0px;
+  margin-bottom: 23px;
 }
 
 .feature-list {
   display: flex;
   padding-left: 0px;
+  list-style: none;
 }
 
 .feature-list .feature-item {
@@ -663,12 +751,12 @@ a {
 }
 
 .feature-item-house {
-  padding-left: 73px;
+  padding-left: 62px;
   padding-right: 73px;
 }
 
 .feature-item-food {
-  padding-left: 58px;
+  padding-left: 54px;
   padding-right: 58px;
 }
 
@@ -682,9 +770,10 @@ a {
 }
 
 .reasons-other {
-  margin-bottom: 52px;
+  margin-bottom: 33px;
   background-color: #eeeeee;
   padding-bottom: 60px;
+  padding-top: 27px;
 }
 
 .reasons-other-list {
@@ -697,6 +786,12 @@ a {
 .reasons-other-description {
   font-weight: 400;
   color: #333333;
+  margin-bottom: 21px;
+}
+
+.reasons-other .description5 {
+  padding-left: 23px;
+  padding-right: 23px;
 }
 
 .reasons-other-list .reasons-other-item {
@@ -708,18 +803,18 @@ a {
 /* Отступы вроде один в один, как на макете, а переносы строк все равно получаются другими */
 
 .reasons-other-item-correction1 {
-  padding-left: 95px;
+  padding-left: 72px;
   padding-right: 95px;
 }
 
 .reasons-other-item-correction2 {
-  padding-left: 68px;
+  padding-left: 50px;
   padding-right: 68px;
 }
 
 .reasons-other-item-correction3 {
-  padding-left: 76px;
-  padding-right: 76px;
+  padding-left: 78px;
+  padding-right: 72px;
 }
 
 .hotel-search {
@@ -738,7 +833,7 @@ a {
 }
 
 .main-footer-container {
-  padding-left: 0px;
+  padding-left: 4px;
 }
 
 .main-footer-box {
@@ -747,42 +842,25 @@ a {
   justify-content: center;
 }
 
+.main-footer .hashtag {
+ margin-top: 24px; 
+}
+
 .main-footer-item {
   padding-right: 6px;
 }
 
-
-.footer-copyright {
-  align-items: center;
-}
-
-/*
-.main-footer {
-  display: flex;
-  align-items: center;
-  padding: 0px 73px;
-}
-
-.main-footer .hashtag {
-  margin-left: 60px;
-}
-
-.main-footer-container {
-  display: flex;
-  padding: 0px;
-  margin-left: 255px;
+.main-footer-img {
+  margin-top: -2px;
+  margin-left: 13px;
+  width: 109px;
+  height: 37px;
 }
 
 .footer-copyright {
-  margin-left: 229px;
-  display: flex;
   align-items: center;
 }
 
-.main-footer-item {
-  list-style: none;
-}
-*/
 .filter-form {
   display: flex;
   width: 100%;
@@ -820,8 +898,36 @@ a {
 
 /*Обводки для сеток*/
 
+.container2 {
+  border: 1px solid red;
+}
 
+.filter {
+  border: 1px solid green;
+}
 
+.modal-travel {
+  border: 1px solid red;
+}
 
+.modal-date {
+  border: 1px solid green;
+}
 
+/*.img-background-absolute {
+  position: absolute;
+  top: 161px;
+  left: 72px;
+  opacity: 0.3;
+}*/
+
+.date-box {
+  border: 1px solid red;
+}
+
+.travel-label-box {
+  border: 1px solid yellow;
+}
+
+/*<img class="img-background-absolute" src="img/sedona-index-1200.jpg">*/
 

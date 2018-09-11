@@ -37,7 +37,7 @@
             <h2 class="visually-hidden">Зачем ехать в Седону?</h2>
             <div class="background-reasons">
               <div class="background-reasons-text">
-                <h3 class="caption">Настоящий городок</h3>
+                <h3 class="caption">Настоящий <br> городок</h3>
                 <p class="description">— №1 —</p>
                 <p class="description description3">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
@@ -65,7 +65,7 @@
             <div class="background-reasons background-reasons-nomargin">
               <img src="img/mountane-bridge.jpg" alt="Очень красивый вид на горный мост">
               <div class="background-reasons-text reasons-text-padding">
-                <h3 class="caption">Там есть Мост дьявола</h3>
+                <h3 class="caption">Там есть<br> Мост дьявола</h3>
                 <p class="description">— №2 —</p>
                 <p class="description description3">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
@@ -109,7 +109,7 @@
             <div class="website">Website by</div>
             <div class="main-footer-img">
               <a href="https://htmlacademy.ru/intensive/htmlcss">
-                <img class="img-border" src="img/logo-htmlacademy.svg" width="109" height="37" alt="Html Academy">
+                <img src="img/logo-htmlacademy.svg" alt="Html Academy">
               </a>
             </div>
           </div>
@@ -117,26 +117,34 @@
 
         <section class="modal modal-travel">
           <form class="travel-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="travel-item">
-              <label for="travel-date-in">Дата заезда:</label>
-              <input id="travel-date-in" type="text" name="date-in" placeholder="24 апреля 2017">
-            </p>
-            <p class="travel-item">
-              <label for="travel-date-out">Дата выезда:</label>
-              <input id="travel-date-out" type="text" name="date-out" placeholder="4 июля 2017">
-            </p>
-            <p class="travel-item">
-              <label for="travel-parent">Взрослые:</label>
-              <button class="button button-travel-item" type="button">Уменьшить количество взрослых на один</button>
-              <input id="travel-parent" type="text" name="parent" placeholder="2">
-              <button class="button button-travel-item" type="button">Увеличить количество взрослых на один</button>
-            </p>
-            <p class="travel-item">
-              <label for="travel-children">Дети:</label>
-              <button class="button button-travel-item" type="button">Уменьшить количество детей на один</button>
-              <input id="travel-children" type="text" name="children" placeholder="0">
-              <button class="button button-travel-item" type="button">Увеличить количество детей на один</button>
-            </p>
+            <div class="modal-date">
+              <p class="travel-item">
+                <label class="date-box" for="travel-date">Дата заезда:</label>
+                <input id="travel-date-in" type="text" name="date-in" placeholder="24 апреля 2017">
+              </p>
+              <div class="modal-calendar"></div>
+            </div>
+            <div class="modal-date">
+              <p class="travel-item">
+                <label class="date-box" for="travel-date-out">Дата выезда:</label>
+                <input id="travel-date-out" type="text" name="date-out" placeholder="4 июля 2017">
+              </p>
+              <div class="modal-calendar"></div>
+            </div>
+            <div class="travel-form-flex">
+              <p class="travel-item">
+                <label class="travel-label-box" for="travel-parent">Взрослые:</label>
+                <button class="button button-travel-item" type="button"><span class="visually-hidden">Уменьшить количество взрослых на один</span><div class="minus"></div></button>
+                <input id="travel-parent" type="text" name="parent" placeholder="2" class="travel-item-input">
+                <button class="button button-travel-item" type="button"><span class="visually-hidden">Увеличить количество взрослых на один</span><div class="plus"></div></button>
+              </p>
+              <p class="travel-item travel-item-children">
+                <label class="travel-label-box" for="travel-children">Дети:</label>
+                <button class="button button-travel-item" type="button"><span class="visually-hidden">Уменьшить количество детей на один</span><div class="minus"></div></button>
+                <input id="travel-children" type="text" name="children" placeholder="0" class="travel-item-input">
+                <button class="button button-travel-item" type="button"><span class="visually-hidden">Увеличить количество детей на один</span><div class="plus"></div></button>
+              </p>
+            </div>
             <button class="button button-travel-form" type="submit">Найти</button>
           </form>
         </section>

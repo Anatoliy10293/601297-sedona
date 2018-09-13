@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
+<!--    <img class="background-inner-absolute" src="img/sedona-hotels-1200.jpg">-->
     <div class="big-container">
       <header class="main-header">
-          <a href="index.html"><img src="img/logo-sedona.svg" width="140" height="70" alt="Логотип сайта Седона"></a>
+          <a class="main-logo" href="index.html"><img src="img/logo-sedona.svg" width="140" height="70" alt="Логотип сайта Седона"></a>
           <nav class="main-navigation">
             <ul class="site-navigation">
               <li class="site-navigation-all site-navigation-info"><a href="info.html">Информация</a></li>
@@ -43,18 +44,18 @@
             </fieldset>
             <fieldset class="filter-form-box house">
               <legend class="filter-caption">Тип жилья:</legend>
-              <ul class="structure-list">
+              <ul class="structure-list structure-list-width">
                 <li class="filter-option">
                   <input class="filter-input filter-input-checkbox" type="checkbox" name="hostel" id="filter-hostel" checked>
-                  <label for="filter-hostel" class="filter-label">Гостиница</label>
+                  <label for="filter-hostel" class="filter-label filter-label-margin">Гостиница</label>
                 </li>  
                 <li class="filter-option">
                   <input class="filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
-                  <label for="filter-hotel" class="filter-label">Мотель</label>
+                  <label for="filter-hotel" class="filter-label filter-label-margin">Мотель</label>
                 </li> 
                 <li class="filter-option">
                   <input class="filter-input filter-input-checkbox" type="checkbox" name="apartment" id="filter-apartment" checked>
-                  <label for="filter-apartment" class="filter-label">Апартаменты</label>
+                  <label for="filter-apartment" class="filter-label filter-label-margin">Апартаменты</label>
                 </li> 
               </ul>
             </fieldset>
@@ -120,7 +121,7 @@
               <div class="hotel-list-info">
                 <h2 class="hotel-list-info-caption"><a href="#" class="button button-hotel-list">Desert Quail Inn</a></h2>
                 <span class="hotels-item-text">Мотель</span>
-                <span class="hotels-item-text">От 3000 р.</span>
+                <span class="hotels-item-text hotels-item-text2">От 3000 р.</span>
                 <p class="hotels-button">
                   <a class="button button-detail" href="#">Подробнее</a>
                   <a class="button button-occupy" href="#">Забронировать</a>
@@ -142,7 +143,7 @@
               <div class="hotel-list-info">
                 <h2 class="hotel-list-info-caption"><a href="#" class="button button-hotel-list">Villas at Poco Diablo</a></h2>
                 <span class="hotels-item-text">Апартаменты</span>
-                <span class="hotels-item-text">От 2000 р.</span>
+                <span class="hotels-item-text hotels-item-text3">От 2000 р.</span>
                 <p class="hotels-button">
                   <a class="button button-detail" href="#">Подробнее</a>
                   <a class="button button-occupy" href="#">Забронировать</a>
@@ -167,7 +168,7 @@
           <li class="main-footer-item"><a href="#"><span class="visually-hidden">Иконка ютуба</span><div class="social-icon social-youtube"></div></a></li>
         </ul>  
         <div class="main-footer-box footer-copyright">
-          <div class="website">Website by</div>
+          <span class="website">Website by</span>
           <div class="main-footer-img">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-htmlacademy.svg" width="109" height="37" alt="Html Academy">

@@ -200,7 +200,7 @@ a {
 .button-sort {
   font-size: 12px;
   color: rgba(0,0,0,0.3);
-  border-bottom: 1px dashed #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
   font-weight: 400;
   line-height: 18px;
   margin-right: 33px;
@@ -306,10 +306,26 @@ a {
   color: #000000;
 }
 
+.travel-item input {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 12px;
+  padding-right: 144px;
+  margin-top: -6px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.travel-date-all {
+  display: inline-block;
+  background-color: #f2f2f2;
+  padding-top: 4px;
+}
+
 .date-box {
   display: inline-block;
   width: 100px;
-  margin-right: 18px;
+  margin-right: 7px;
   margin-top: 0px;
   margin-left: 2px;
 }
@@ -403,7 +419,7 @@ a {
   font-weight: 400;
   margin-right: 36px;
   margin-left: -1px;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 .hotels-item-text2 {
@@ -436,10 +452,6 @@ a {
 
 .hotels-list {
   padding-left: 0px;
-}
-
-.hotel-list-info-caption {
-  margin: 0px;
 }
 
 .rank {
@@ -543,6 +555,11 @@ a {
 .social-youtube:focus::before,
 .social-youtube:active::before {
   background-color: #5496bd;
+    
+/*
+    Опасити влияет только на фон, а не на саму картинку, как сделать?
+  opacity: 0.3;
+*/
 }
 
 .social-fb::before {
@@ -615,6 +632,10 @@ a {
   margin: 0 auto;
   padding: 47px 55px 56px 55px;
   position: relative;
+}
+
+.modal-travel-number {
+  
 }
 
 .structure-list {
@@ -690,42 +711,33 @@ a {
   height: 17px;
 }
 
-.travel-item .travel-item-input {
+.travel-number{
+  background-color: #f2f2f2;
+  color: #a9a9a9;
+}
+
+.button-travel-item {
+  background-color: #f2f2f2;
+  color: #a9a9a9;
+  padding: 4px 12px;
+}
+
+.travel-number .travel-item-input {
   width: 40px;
-  height: 40px;
   text-align: center;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 10px 0px;
+  margin-top: -4px;
 }
 
 .travel-item-out {
   margin-top: 17px;
 }
 
-.minus {
-  background-image: url(../img/minus.svg);
-  width: 12px;
-  height: 3px;
-  background-color: red;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.plus {
-  background-image: url(../img/plus.svg);
-  width: 11px;
-  height: 11px;
-  background-color: red;
-  background-repeat: no-repeat;
-  background-position: 50% 50%:
-}
-
 .travel-form-flex {
   display: flex;
-  margin-top: -7px;
-}
-
-.travel-item-children {
-  margin-left: auto;
-  margin-right: 0px;
+  margin-top: 22px;
 }
 
 .travel-label-box {
@@ -733,32 +745,65 @@ a {
   width: 100px;
 }
 
+.travel-children {
+  margin-left: 54px;
+  margin-right: -36px;
+}
+
+.travel-parent {
+  margin-right: 12px; 
+}
+
 .modal-calendar {
   background-image: url(../img/calendar.svg);
   width: 21px;
   height: 22px;
   color: #a9a9a9;
-  margin-left: auto;
+  margin-top: 0px;
+  margin-left: 0px;
   margin-right: 11px;
+  border: none;
 }
 
 .modal-date {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: -2px;
 }
 
 .icon-up-dir {
   background-image: url(../img/icon-up-dir.svg);
   width: 11px;
   height: 10px;
+  opacity: 0.3;
 }
 
 .icon-down-dir {
   background-image: url(../img/icon-down-dir.svg);
   width: 11px;
   height: 10px;
+  opacity: 0.3;
   margin-left: 11px;
+}
+
+.icon-up-dir:hover,
+.icon-down-dir:hover {
+  opacity: 1;
+}
+
+.icon-up-dir:focus,
+.icon-up-dir:active,
+.icon-down-dir:focus,
+.icon-down-dir:active {
+/*  background-color: #81b3d2;*/
+}
+
+.active-link,
+.active-link:hover,
+.active-link:active,
+.active-link:focus {
+  color: #81b3d2;
+  opacity: 1;
 }
 
 /*Свойства для формы сортировки стоимости*/
@@ -1031,7 +1076,8 @@ a {
 .main-footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 16px;
+  margin-top: 28px;
+  margin-bottom: 36px;
 }
 
 .main-footer-item {
@@ -1136,14 +1182,12 @@ a {
   border: 1px solid green;
 }*/
 
-/*
 .img-background-absolute {
   position: absolute;
-  top: 0px;
-  left: 250px;
-  opacity: 0.3;
+  top: 983px;
+  left: 312px;
+  opacity: 0.8;
 }
-*/
 
 /*
 .background-inner-absolute {
@@ -1161,3 +1205,10 @@ a {
 .travel-label-box {
   border: 1px solid yellow;
 }*/
+
+/*
+.travel-number {
+  border: 1px solid green;
+}
+*/
+

@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-<!--      <img class="img-background-absolute" src="img/sedona-index-1200.jpg">-->
+<!--      <img class="img-background-absolute" src="img/sedona-index-1200.jpg" alt="">-->
       <div class="big-container">
         <header class="main-header">
           <a class="main-logo"><img src="img/logo-sedona.svg" width="140" height="70" alt="Логотип сайта Седона"></a>
@@ -22,9 +22,9 @@
           </nav>
         </header>
         <main class="container">
-          <img class="main-image" src="img/background.jpg">
-          <img class="welcome" src="img/intro-welcome.svg">
-          <img class="white-mask" src="img/intro-mask.svg">
+          <img class="main-image" src="img/background.jpg" alt="">
+          <img class="welcome" src="img/intro-welcome.svg" alt="">
+          <img class="white-mask" src="img/intro-mask.svg" alt="">
           <!--- <div class="background-mountain">
             <div class="background-welcome">
               <div class="background-white"></div>
@@ -94,9 +94,15 @@
           <section class="hotel-search">
             <p class="question">Заинтересовались?</p>
             <p class="topic-small topic-small-center">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <a href="inner.html"><button class="button button-hotel-search" type="submit">Поиск гостиницы в Седоне</button></a>
+            <button class="button button-hotel-search" type="submit">Поиск гостиницы в Седоне</button>
           </section>  
         </main>
+          
+        <section class="modal modal-map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <img src="img/map.jpg" alt="Карта Седоны">
+        </section>
+          
         <footer class="main-footer">
           <p class="main-footer-box hashtag">#VISITSEDONA</p>
           <ul class="main-footer-box main-footer-container">
@@ -106,11 +112,9 @@
           </ul>  
           <div class="main-footer-box footer-copyright">
             <span class="website">Website by</span>
-            <div class="main-footer-img">
-              <a href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img/logo-htmlacademy.svg" alt="Html Academy">
-              </a>
-            </div>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img  class="main-footer-img" src="img/logo-htmlacademy.svg" alt="Html Academy">
+            </a>
           </div>
         </footer>
 
@@ -118,38 +122,38 @@
           <form class="travel-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="modal-date">
               <p class="travel-item">
-                <label class="date-box" for="travel-date">Дата заезда:</label>
-                <input id="travel-date-in" type="text" name="date-in" placeholder="24 апреля 2017">
+                <label class="date-box" for="travel-date-in">Дата заезда:</label>
+                <span class="travel-date-all">
+                  <input id="travel-date-in" type="text" name="date-in" placeholder="24 апреля 2017">
+                  <button class="modal-calendar" type="button"></button>
+                </span>
               </p>
-              <div class="modal-calendar"></div>
             </div>
             <div class="modal-date">
               <p class="travel-item travel-item-out">
                 <label class="date-box" for="travel-date-out">Дата выезда:</label>
-                <input id="travel-date-out" type="text" name="date-out" placeholder="4 июля 2017">
+                <span class="travel-date-all">
+                  <input id="travel-date-out" type="text" name="date-out" placeholder="4 июля 2017">
+                  <button class="modal-calendar" type="button"></button>
+                </span>
               </p>
-              <div class="modal-calendar"></div>
             </div>
             <div class="travel-form-flex">
-              <p class="travel-item">
-                <label class="travel-label-box" for="travel-parent">Взрослые:</label>
-                <button class="button button-travel-item" type="button"><span class="visually-hidden">Уменьшить количество взрослых на один</span><div class="minus"></div></button>
+              <label class="travel-label-box travel-parent" for="travel-parent">Взрослые:</label>
+              <div class="travel-number">
+                <button class="button button-travel-item" type="button">-<span class="visually-hidden">Уменьшить количество взрослых на один</span></button>
                 <input id="travel-parent" type="text" name="parent" placeholder="2" class="travel-item-input">
-                <button class="button button-travel-item" type="button"><span class="visually-hidden">Увеличить количество взрослых на один</span><div class="plus"></div></button>
-              </p>
-              <p class="travel-item travel-item-children">
-                <label class="travel-label-box" for="travel-children">Дети:</label>
-                <button class="button button-travel-item" type="button"><span class="visually-hidden">Уменьшить количество детей на один</span><div class="minus"></div></button>
+                <button class="button button-travel-item" type="button">+<span class="visually-hidden">Увеличить количество взрослых на один</span></button>
+              </div>
+              <label class="travel-label-box travel-children" for="travel-children">Дети:</label>
+              <div class="travel-number">
+                <button class="button button-travel-item" type="button">-<span class="visually-hidden">Уменьшить количество детей на один</span></button>
                 <input id="travel-children" type="text" name="children" placeholder="0" class="travel-item-input">
-                <button class="button button-travel-item" type="button"><span class="visually-hidden">Увеличить количество детей на один</span><div class="plus"></div></button>
-              </p>
+                <button class="button button-travel-item" type="button">+<span class="visually-hidden">Увеличить количество детей на один</span></button>
+              </div>
             </div>
             <button class="button button-travel-form" type="submit">Найти</button>
           </form>
-        </section>
-
-        <section class="modal modal-map">
-          <h2 class="visually-hidden">Как до нас добраться</h2> 
         </section>
       </div>      
   </body>
